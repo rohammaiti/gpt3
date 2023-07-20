@@ -1,0 +1,93 @@
+.gpt3__navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem, 6rem;
+}
+
+.gpt3__navbar-links{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.gpt3__navbar-links_logo{
+    margin-right: 2rem;
+}
+
+.gpt3__navbar-links_logo img{
+    width: 60px;
+    height: 15px;
+}
+.gpt3__navbar-links_container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.gpt3__navbar-sign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gpt3__navbar-links_container p,
+.gpt3__navbar-sign p,
+.gpt3__navbar-menu_container p{
+    color: blanchedalmond;
+    font-weight: 300;
+    font-size: large;
+    line-height: 25px;
+    text-transform: capitalize;
+    margin: 1.5rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-position: right center; /* change the direction of the change here */
+  }
+
+.gpt3__navbar-sign button,
+.gpt3__navbar-menu_container button
+{
+    width: 150px;
+    height: 60px;
+    left: 1155px;
+    top:55px;
+    background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.gpt3__navbar-menu_container-links-sign{
+    display: block;
+}
+
+.gpt3__navbar-menu svg{
+    cursor: pointer;
+}
+
+@media screen and (max-width:1050px){
+    .gpt3__navbar-links_container{
+        display: none;
+    }
+    .gpt3__navbar-menu{
+        display: flex;
+    }
+}
+
+@media screen and (max-width:700px){
+    .gpt3__navbar{
+        padding: 2rem 4rem;
+    }
+}
+
+@media screen and (max-width:55px){
+    .gpt3__navbar{
+        padding: 2rem;
+    }
+    .gpt3__navbar-sign{
+        display: none;
+    }
+}
